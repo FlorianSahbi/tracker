@@ -5,12 +5,13 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server": "^2.15.1",
+    "dotenv": "^10.0.0",
     "graphql": "^15.3.0",
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.25",
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon -r dotenv/config index.js"
   }
 }
