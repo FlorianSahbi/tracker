@@ -23,6 +23,7 @@ const resolvers = {
   },
   Mutation: {
     createMarker: async (_, marker) => {
+      console.log("tri")
       return await createMarker(marker);
     },
   },
